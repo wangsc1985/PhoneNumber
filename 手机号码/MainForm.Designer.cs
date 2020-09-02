@@ -305,7 +305,7 @@
             // 
             this.button导出.Enabled = false;
             this.button导出.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button导出.Location = new System.Drawing.Point(586, 421);
+            this.button导出.Location = new System.Drawing.Point(702, 421);
             this.button导出.Name = "button导出";
             this.button导出.Size = new System.Drawing.Size(110, 34);
             this.button导出.TabIndex = 7;
@@ -416,11 +416,11 @@
             // 
             this.button文本框.Enabled = false;
             this.button文本框.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button文本框.Location = new System.Drawing.Point(702, 421);
+            this.button文本框.Location = new System.Drawing.Point(586, 421);
             this.button文本框.Name = "button文本框";
             this.button文本框.Size = new System.Drawing.Size(111, 34);
             this.button文本框.TabIndex = 7;
-            this.button文本框.Text = "文本框";
+            this.button文本框.Text = "输入";
             this.button文本框.UseVisualStyleBackColor = true;
             this.button文本框.Click += new System.EventHandler(this.button文本框_Click);
             // 
@@ -455,8 +455,8 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.textBox内容);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button文本框);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button导出);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button统计);
