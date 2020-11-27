@@ -38,76 +38,76 @@ namespace phoneNumber
         public MainForm()
         {
             InitializeComponent();
-            var tmp = this.GetRegValue(RegKey, RegName姓名学测法);
-            if (tmp != null)
-            {
-                isOpen姓名学测法 = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName大吉);
-            if (tmp != null)
-            {
-                this.checkBox大吉.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName吉带凶);
-            if (tmp != null)
-            {
-                this.checkBox吉带凶.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName凶带吉);
-            if (tmp != null)
-            {
-                this.checkBox凶带吉.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName凶);
-            if (tmp != null)
-            {
-                this.checkBox凶.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName生气);
-            if (tmp != null)
-            {
-                this.checkBox生气.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName延年);
-            if (tmp != null)
-            {
-                this.checkBox延年.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName天医);
-            if (tmp != null)
-            {
-                this.checkBox天医.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName小天医);
-            if (tmp != null)
-            {
-                this.checkBox小天医.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName伏位);
-            if (tmp != null)
-            {
-                this.checkBox伏位.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName绝命);
-            if (tmp != null)
-            {
-                this.checkBox绝命.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName五鬼);
-            if (tmp != null)
-            {
-                this.checkBox五鬼.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName六煞);
-            if (tmp != null)
-            {
-                this.checkBox六煞.Checked = bool.Parse(tmp);
-            }
-            tmp = this.GetRegValue(RegKey, RegName祸害);
-            if (tmp != null)
-            {
-                this.checkBox祸害.Checked = bool.Parse(tmp);
-            }
+            //var tmp = this.GetRegValue(RegKey, RegName姓名学测法);
+            //if (tmp != null)
+            //{
+            //    isOpen姓名学测法 = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName大吉);
+            //if (tmp != null)
+            //{
+            //    this.checkBox大吉.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName吉带凶);
+            //if (tmp != null)
+            //{
+            //    this.checkBox吉带凶.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName凶带吉);
+            //if (tmp != null)
+            //{
+            //    this.checkBox凶带吉.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName凶);
+            //if (tmp != null)
+            //{
+            //    this.checkBox凶.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName生气);
+            //if (tmp != null)
+            //{
+            //    this.checkBox生气.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName延年);
+            //if (tmp != null)
+            //{
+            //    this.checkBox延年.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName天医);
+            //if (tmp != null)
+            //{
+            //    this.checkBox天医.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName小天医);
+            //if (tmp != null)
+            //{
+            //    this.checkBox小天医.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName伏位);
+            //if (tmp != null)
+            //{
+            //    this.checkBox伏位.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName绝命);
+            //if (tmp != null)
+            //{
+            //    this.checkBox绝命.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName五鬼);
+            //if (tmp != null)
+            //{
+            //    this.checkBox五鬼.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName六煞);
+            //if (tmp != null)
+            //{
+            //    this.checkBox六煞.Checked = bool.Parse(tmp);
+            //}
+            //tmp = this.GetRegValue(RegKey, RegName祸害);
+            //if (tmp != null)
+            //{
+            //    this.checkBox祸害.Checked = bool.Parse(tmp);
+            //}
 
         }
 
@@ -584,20 +584,20 @@ namespace phoneNumber
         /// <param name="name">值名称</param>
         /// <param name="values">值</param>
         /// <returns>返回布尔值,指定操作是否成功</returns>
-        private void SetRegValue(string key, string name, string value)
-        {
-            try
-            {
-                RegistryKey hklm = Registry.LocalMachine;
-                RegistryKey software = hklm.OpenSubKey("SOFTWARE", true);
-                RegistryKey aimdir = software.CreateSubKey(key);
-                aimdir.SetValue(name, value);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        //private void SetRegValue(string key, string name, string value)
+        //{
+        //    try
+        //    {
+        //        RegistryKey hklm = Registry.LocalMachine;
+        //        RegistryKey software = hklm.OpenSubKey("SOFTWARE", true);
+        //        RegistryKey aimdir = software.CreateSubKey(key);
+        //        aimdir.SetValue(name, value);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //}
 
         private void checkBox大吉_CheckedChanged(object sender, EventArgs e)
         {
@@ -605,9 +605,9 @@ namespace phoneNumber
                 isOpen姓名学测法 = true;
             else
                 isOpen姓名学测法 = false;
-            this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
+            //this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
 
-            this.SetRegValue(RegKey, RegName大吉, checkBox大吉.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName大吉, checkBox大吉.Checked.ToString());
         }
 
         private void checkBox吉带凶_CheckedChanged(object sender, EventArgs e)
@@ -616,9 +616,9 @@ namespace phoneNumber
                 isOpen姓名学测法 = true;
             else
                 isOpen姓名学测法 = false;
-            this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
+            //this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
 
-            this.SetRegValue(RegKey, RegName吉带凶, checkBox吉带凶.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName吉带凶, checkBox吉带凶.Checked.ToString());
         }
 
         private void checkBox凶带吉_CheckedChanged(object sender, EventArgs e)
@@ -627,9 +627,9 @@ namespace phoneNumber
                 isOpen姓名学测法 = true;
             else
                 isOpen姓名学测法 = false;
-            this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
+            //this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
 
-            this.SetRegValue(RegKey, RegName凶带吉, checkBox凶带吉.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName凶带吉, checkBox凶带吉.Checked.ToString());
         }
         private void checkBox凶_CheckedChanged(object sender, EventArgs e)
         {
@@ -637,9 +637,9 @@ namespace phoneNumber
                 isOpen姓名学测法 = true;
             else
                 isOpen姓名学测法 = false;
-            this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
+            //this.SetRegValue(RegKey, RegName姓名学测法, isOpen姓名学测法.ToString());
 
-            this.SetRegValue(RegKey, RegName凶, checkBox凶.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName凶, checkBox凶.Checked.ToString());
         }
 
         /// <summary>
@@ -672,47 +672,47 @@ namespace phoneNumber
 
         private void checkBox生气_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName生气, checkBox生气.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName生气, checkBox生气.Checked.ToString());
         }
 
         private void checkBox延年_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName延年, checkBox延年.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName延年, checkBox延年.Checked.ToString());
         }
 
         private void checkBox天医_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName天医, checkBox天医.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName天医, checkBox天医.Checked.ToString());
         }
 
         private void checkBox伏位_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName伏位, checkBox伏位.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName伏位, checkBox伏位.Checked.ToString());
         }
 
         private void checkBox绝命_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName绝命, checkBox绝命.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName绝命, checkBox绝命.Checked.ToString());
         }
 
         private void checkBox五鬼_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName五鬼, checkBox五鬼.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName五鬼, checkBox五鬼.Checked.ToString());
         }
 
         private void checkBox六煞_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName六煞, checkBox六煞.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName六煞, checkBox六煞.Checked.ToString());
         }
 
         private void checkBox祸害_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName祸害, checkBox祸害.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName祸害, checkBox祸害.Checked.ToString());
         }
 
         private void checkBox小天医_CheckedChanged(object sender, EventArgs e)
         {
-            this.SetRegValue(RegKey, RegName小天医, checkBox小天医.Checked.ToString());
+            //this.SetRegValue(RegKey, RegName小天医, checkBox小天医.Checked.ToString());
         }
 
 
@@ -733,124 +733,124 @@ namespace phoneNumber
         }
 
     }
-    public class HttpWebResponseUtility
-    {
-        private static readonly string DefaultUserAgent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
-        /// <summary>  
-        /// 创建GET方式的HTTP请求  
-        /// </summary>  
-        /// <param name="url">请求的URL</param>  
-        /// <param name="timeout">请求的超时时间</param>  
-        /// <param name="userAgent">请求的客户端浏览器信息，可以为空</param>  
-        /// <param name="cookies">随同HTTP请求发送的Cookie信息，如果不需要身份验证可以为空</param>  
-        /// <returns></returns>  
-        public static HttpWebResponse CreateGetHttpResponse(string url, int? timeout, string userAgent, CookieCollection cookies)
-        {
-            if (string.IsNullOrEmpty(url))
-            {
-                throw new ArgumentNullException("url");
-            }
-            HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
-            request.Method = "GET";
-            request.UserAgent = DefaultUserAgent;
-            if (!string.IsNullOrEmpty(userAgent))
-            {
-                request.UserAgent = userAgent;
-            }
-            if (timeout.HasValue)
-            {
-                request.Timeout = timeout.Value;
-            }
-            if (cookies != null)
-            {
-                request.CookieContainer = new CookieContainer();
-                request.CookieContainer.Add(cookies);
-            }
-            return request.GetResponse() as HttpWebResponse;
-        }
-        /// <summary>  
-        /// 创建POST方式的HTTP请求  
-        /// </summary>  
-        /// <param name="url">请求的URL</param>  
-        /// <param name="parameters">随同请求POST的参数名称及参数值字典</param>  
-        /// <param name="timeout">请求的超时时间</param>  
-        /// <param name="userAgent">请求的客户端浏览器信息，可以为空</param>  
-        /// <param name="requestEncoding">发送HTTP请求时所用的编码</param>  
-        /// <param name="cookies">随同HTTP请求发送的Cookie信息，如果不需要身份验证可以为空</param>  
-        /// <returns></returns>  
-        public static HttpWebResponse CreatePostHttpResponse(string url, IDictionary<string, string> parameters, int? timeout, string userAgent, Encoding requestEncoding, CookieCollection cookies)
-        {
-            if (string.IsNullOrEmpty(url))
-            {
-                throw new ArgumentNullException("url");
-            }
-            if (requestEncoding == null)
-            {
-                throw new ArgumentNullException("requestEncoding");
-            }
-            HttpWebRequest request = null;
-            //如果是发送HTTPS请求  
-            if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
-            {
-                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
-                request = WebRequest.Create(url) as HttpWebRequest;
-                request.ProtocolVersion = HttpVersion.Version10;
-            }
-            else
-            {
-                request = WebRequest.Create(url) as HttpWebRequest;
-            }
-            request.Method = "POST";
-            request.ContentType = "application/x-www-form-urlencoded";
+    //public class HttpWebResponseUtility
+    //{
+    //    private static readonly string DefaultUserAgent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
+    //    /// <summary>  
+    //    /// 创建GET方式的HTTP请求  
+    //    /// </summary>  
+    //    /// <param name="url">请求的URL</param>  
+    //    /// <param name="timeout">请求的超时时间</param>  
+    //    /// <param name="userAgent">请求的客户端浏览器信息，可以为空</param>  
+    //    /// <param name="cookies">随同HTTP请求发送的Cookie信息，如果不需要身份验证可以为空</param>  
+    //    /// <returns></returns>  
+    //    public static HttpWebResponse CreateGetHttpResponse(string url, int? timeout, string userAgent, CookieCollection cookies)
+    //    {
+    //        if (string.IsNullOrEmpty(url))
+    //        {
+    //            throw new ArgumentNullException("url");
+    //        }
+    //        HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
+    //        request.Method = "GET";
+    //        request.UserAgent = DefaultUserAgent;
+    //        if (!string.IsNullOrEmpty(userAgent))
+    //        {
+    //            request.UserAgent = userAgent;
+    //        }
+    //        if (timeout.HasValue)
+    //        {
+    //            request.Timeout = timeout.Value;
+    //        }
+    //        if (cookies != null)
+    //        {
+    //            request.CookieContainer = new CookieContainer();
+    //            request.CookieContainer.Add(cookies);
+    //        }
+    //        return request.GetResponse() as HttpWebResponse;
+    //    }
+    //    /// <summary>  
+    //    /// 创建POST方式的HTTP请求  
+    //    /// </summary>  
+    //    /// <param name="url">请求的URL</param>  
+    //    /// <param name="parameters">随同请求POST的参数名称及参数值字典</param>  
+    //    /// <param name="timeout">请求的超时时间</param>  
+    //    /// <param name="userAgent">请求的客户端浏览器信息，可以为空</param>  
+    //    /// <param name="requestEncoding">发送HTTP请求时所用的编码</param>  
+    //    /// <param name="cookies">随同HTTP请求发送的Cookie信息，如果不需要身份验证可以为空</param>  
+    //    /// <returns></returns>  
+    //    public static HttpWebResponse CreatePostHttpResponse(string url, IDictionary<string, string> parameters, int? timeout, string userAgent, Encoding requestEncoding, CookieCollection cookies)
+    //    {
+    //        if (string.IsNullOrEmpty(url))
+    //        {
+    //            throw new ArgumentNullException("url");
+    //        }
+    //        if (requestEncoding == null)
+    //        {
+    //            throw new ArgumentNullException("requestEncoding");
+    //        }
+    //        HttpWebRequest request = null;
+    //        //如果是发送HTTPS请求  
+    //        if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+    //        {
+    //            ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+    //            request = WebRequest.Create(url) as HttpWebRequest;
+    //            request.ProtocolVersion = HttpVersion.Version10;
+    //        }
+    //        else
+    //        {
+    //            request = WebRequest.Create(url) as HttpWebRequest;
+    //        }
+    //        request.Method = "POST";
+    //        request.ContentType = "application/x-www-form-urlencoded";
 
-            if (!string.IsNullOrEmpty(userAgent))
-            {
-                request.UserAgent = userAgent;
-            }
-            else
-            {
-                request.UserAgent = DefaultUserAgent;
-            }
+    //        if (!string.IsNullOrEmpty(userAgent))
+    //        {
+    //            request.UserAgent = userAgent;
+    //        }
+    //        else
+    //        {
+    //            request.UserAgent = DefaultUserAgent;
+    //        }
 
-            if (timeout.HasValue)
-            {
-                request.Timeout = timeout.Value;
-            }
-            if (cookies != null)
-            {
-                request.CookieContainer = new CookieContainer();
-                request.CookieContainer.Add(cookies);
-            }
-            //如果需要POST数据  
-            if (!(parameters == null || parameters.Count == 0))
-            {
-                StringBuilder buffer = new StringBuilder();
-                int i = 0;
-                foreach (string key in parameters.Keys)
-                {
-                    if (i > 0)
-                    {
-                        buffer.AppendFormat("&{0}={1}", key, parameters[key]);
-                    }
-                    else
-                    {
-                        buffer.AppendFormat("{0}={1}", key, parameters[key]);
-                    }
-                    i++;
-                }
-                byte[] data = requestEncoding.GetBytes(buffer.ToString());
-                using (Stream stream = request.GetRequestStream())
-                {
-                    stream.Write(data, 0, data.Length);
-                }
-            }
-            return request.GetResponse() as HttpWebResponse;
-        }
+    //        if (timeout.HasValue)
+    //        {
+    //            request.Timeout = timeout.Value;
+    //        }
+    //        if (cookies != null)
+    //        {
+    //            request.CookieContainer = new CookieContainer();
+    //            request.CookieContainer.Add(cookies);
+    //        }
+    //        //如果需要POST数据  
+    //        if (!(parameters == null || parameters.Count == 0))
+    //        {
+    //            StringBuilder buffer = new StringBuilder();
+    //            int i = 0;
+    //            foreach (string key in parameters.Keys)
+    //            {
+    //                if (i > 0)
+    //                {
+    //                    buffer.AppendFormat("&{0}={1}", key, parameters[key]);
+    //                }
+    //                else
+    //                {
+    //                    buffer.AppendFormat("{0}={1}", key, parameters[key]);
+    //                }
+    //                i++;
+    //            }
+    //            byte[] data = requestEncoding.GetBytes(buffer.ToString());
+    //            using (Stream stream = request.GetRequestStream())
+    //            {
+    //                stream.Write(data, 0, data.Length);
+    //            }
+    //        }
+    //        return request.GetResponse() as HttpWebResponse;
+    //    }
 
-        private static bool CheckValidationResult(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors)
-        {
-            return true; //总是接受  
-        }
-    }
+    //    private static bool CheckValidationResult(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors)
+    //    {
+    //        return true; //总是接受  
+    //    }
+    //}
 
 }

@@ -116,8 +116,6 @@
             // checkBox吉带凶
             // 
             this.checkBox吉带凶.AutoSize = true;
-            this.checkBox吉带凶.Checked = true;
-            this.checkBox吉带凶.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox吉带凶.Location = new System.Drawing.Point(89, 27);
             this.checkBox吉带凶.Name = "checkBox吉带凶";
             this.checkBox吉带凶.Size = new System.Drawing.Size(60, 16);
@@ -153,8 +151,6 @@
             // checkBox凶带吉
             // 
             this.checkBox凶带吉.AutoSize = true;
-            this.checkBox凶带吉.Checked = true;
-            this.checkBox凶带吉.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox凶带吉.Location = new System.Drawing.Point(89, 52);
             this.checkBox凶带吉.Name = "checkBox凶带吉";
             this.checkBox凶带吉.Size = new System.Drawing.Size(60, 16);
